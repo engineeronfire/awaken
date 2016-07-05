@@ -27,6 +27,12 @@ def index():
                             title=None,
                             user=user,
                             posts=posts)
+
+@app.route('/contact')
+
+def contact():
+    return render_template('contact.html',
+                            title='Sign In')
 # we have imported our LoginForm class, instantiated an object from it,
 #and sent it down to the template. This is all that is required to get form fields rendered.
 #the methods argument in the route decorator.
